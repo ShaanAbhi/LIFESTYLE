@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+/* body{
+    background-color: aqua;
+} */
+.nav_container{
+    height: 205px;
+    width: 100%;
+    display:  grid;
+    grid-template-rows: 50px 88px 65px ;
+    position:sticky;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+.nav_container > div{
+    display: flex;
+}
+.small_nav > div{
+    
+    height: 100%;
+    width: 40%;
+    margin-left: 6%;
+}
+.left{
+    display: flex;
+}
+.box1_logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    margin: 0px 2%;
+    
+}
+.box1_logo> a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 8%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.small_nav{
+    background-color: black;
+    color: whitesmoke;
+}
+.small_img{
+    height: 30px;
+    width: 32px;
+    filter: invert(100%);        
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right > div{
+    font-size: 16px;
+    margin: 0px 2%;
+    font-weight: bold;
+}
+/* -----------------------------------2nd nav -------------------------------------------------------------------- */
+.Main_nav{
+    background-color: white;
+}
+.logo{
+    height: 100%;
+    width: 10%;
+    margin-left: 5%;
+}
+.main_logo{
+    height: 100%;
+    width: 100%;
+}
+.Nav_section_left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.Nav_section_left > div{
+    height: 100%;
+    width: 22%;
+}
+.Nav_section_left > div > a{ 
+   text-decoration: none;
+   font-size: 19px;
+   color: black;
+   font-weight: bold;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.hover_1:hover{
+    background-color: whitesmoke;
+    color: goldenrod;
+}
+.searchbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;   
+}
+.searchbox> div{
+    height: 60%;
+    width:100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.search_logo{
+    margin: 0px 2%;
+    height: 20px;
+    width: 20px;
+    filter: invert(60%);
+}
+.searchbox > div > input {
+    
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+
+.sign_up_section{
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.sign_up_section > div{
+    margin: 0px 2%;
+}
+#basket{
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+.small_logo{
+    height: 30px;
+    width: 30px;
+    margin-left: 15%;
+}
+#sign_up{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sign_up:hover{
+    color: goldenrod;
+}
+/* ________________________________________________________________3rd Nav_________________________________________________________________ */
+
+.third_Nav{
+    padding-left: 7%;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+.third_Nav > div{
+   height: 100%; 
+   width: 4% auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 1%;
+} 
+.items{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    
+}
+.items:hover{
+    border-bottom: 2px solid goldenrod;
+}
+/* --------------------------------------------------drop down------------------------------------------------------------ */
+.block{
+    display: block;
+}
+
+
+.dropdownMenu{
+    display: none;
+    height: 300px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.dropdowncontent{
+    margin-left: 7%;
+    display: flex;
+    height: 100%;
+    width: 90%;
+}
+.dropdowncontent > div{
+    width: 15%;
+    height: 90%;
+    margin: 1% 1%; 
+}
+.aside{
+    border-bottom: 1px solid rgba(192, 192, 192, 0.74);
+}
+.Nav_head{
+    margin-bottom: 13%;
+    margin-left: 13%;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.74);
+}
+.inner_navitems{
+    margin: 8% 13%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Nav_Photos{
+    max-height: 100%;
+    max-width: 100%;
+
+}

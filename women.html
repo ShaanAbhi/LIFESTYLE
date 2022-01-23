@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+
+    <title>Womens-Lifestyle</title>
+    <style>
+        *{
+            font-family: 'PT Mono', monospace;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .nav_container{
+    height: 9.5em;
+    width: 100%;
+    display:  grid;
+    grid-template-rows: 25% 45% 30% ;
+    position:sticky;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    /* font-family: 'PT Mono', monospace;
+    font-family: 'Ubuntu', sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav_container > div{
+    display: flex;
+}
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+.small_nav{
+   display: flex;
+   justify-content: space-between;
+}
+.small_nav > div{
+    
+    height: 100%;
+    width: 30%;
+    margin-left: 6%;
+  
+}
+.left{
+    display: flex;
+}
+.box1_logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    margin: 0px 2%;
+    
+}
+.box1_logo> a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 8%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.small_nav{
+    background-color: black;
+    color: whitesmoke;
+}
+.small_img{
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);        
+}
+
+.right{
+    margin-right: 7%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right > div{
+    font-size: 13px;
+    margin: 0px 2%;
+    font-weight: bold;
+}
+/* -----------------------------------2nd nav -------------------------------------------------------------------- */
+.Main_nav{
+    background-color: white;
+    width: 100%;
+    height: px;
+}
+.logo{
+    height: 100%;
+    width: 10%;
+    margin-left: 5%;
+}
+.main_logo{
+    height: 100%;
+    width: 100%;
+}
+.Nav_section_left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.Nav_section_left > div{
+    height: 100%;
+    width: 22%;
+}
+.Nav_section_left > div > a{ 
+   text-decoration: none;
+   font-size: 13.5px;
+   color: black;
+   font-weight: bold;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.hover_1:hover{
+    background-color: whitesmoke;
+    color: goldenrod;
+}
+.searchbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;   
+}
+.searchbox> div{
+    height: 60%;
+    width:100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.search_logo{
+    margin: 0px 2%;
+    height: 20px;
+    width: 20px;
+    filter: invert(60%);
+}
+.searchbox > div > input {
+    
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+
+.sign_up_section{
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: bolder;
+}
+.sign_up_section > div{
+    margin: 0px 2%;
+}
+#Navbasket{
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+#Navbasket > a{
+    color: black;
+    text-decoration: none;
+}
+.small_logo{
+    height: 21px;
+    width: 21px;
+    margin-left: 15%;
+}
+#sign_up{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sign_up:hover{
+    color: goldenrod;
+}
+/* ________________________________________________________________3rd Nav_________________________________________________________________ */
+
+.third_Nav{
+    padding-left: 7%;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+.third_Nav > div{
+   height: 100%; 
+   width: 4% auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 1%;
+} 
+.Navitems{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    
+}
+.Navitems:hover{
+    border-bottom: 2px solid goldenrod;
+}
+
+
+
+
+
+
+
+        .extraspace{
+            height: 11rem;
+            width: 100%;
+        }
+        #container{
+            width: 98%;
+            margin: auto;
+            border: 1px solid transparent ;
+            /* margin-top: 100px; */
+            text-align: center;
+            position: relative;
+            
+            
+        }
+        #segregate{
+            width: 87%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            border: 1px solid transparent;
+        }
+        #content{
+            width: 87%;
+            margin: auto;
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        img{
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+        #ratebar{
+            display: flex;
+            margin-top: 5px;
+            border: 1px solid transparent;
+        }
+        #content>div{
+            margin: 8px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        h3{
+            padding: 0%;
+            margin: 0%;
+        }
+        #strike,h3,p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #strike{
+            padding: 0%;
+            margin: 0%;
+            color: grey;
+            margin-left: 8px;
+            text-decoration: line-through;
+        }
+        #extend{
+          width: 100%;
+          background-color: rgb(247, 248, 247);
+        }
+        #segregate>select{
+          width: 170px;
+          height: 35px;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          color: #000000;
+          font-size: 14px;
+          font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+          font-weight: 400;
+          line-height: 1.43
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(250, 166, 25);
+            border: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            margin-top: 4px;
+            
+        }
+        #name{
+            font-size: 16px;
+            text-align: justify;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 10px;
+
+        }
+        .holder{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        /* footer include css ************************************************************* */
+    
+/* footerinclued csss *************************************************************************** */
+/* footerinclued csss *************************************************************************** */
+/* footerinclued csss *************************************************************************** */
+.footer-first-box {
+            height: auto;
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 100px;
+            /* margin: auto; */
+            /* justify-content: center; */
+
+
+        }
+
+        .footer-second-box {
+            height: auto;
+            width: 30%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 100px;
+
+
+        }
+
+        li {
+            list-style: none;
+            margin-top: 5px;
+            font-size: 15px;
+            font-family: 'Barlow', sans-serif;
+            /* line-gap-override: 5px; */
+        }
+
+        li>a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+
+        }
+
+        .imgage-Icon {
+            height: 35px;
+            width: 35px;
+            padding-left:15px;
+            padding-top: 15px;
+
+
+        }
+        footer{
+            margin-top: 50px;
+            padding: 40px;
+        }
+
+        .image-icons {
+            border: 1px solid rgb(158, 156, 156);
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .footer-items {
+            /* margin: auto; */
+            /* margin: auto; */
+            margin-left: 30px;
+            margin-right: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+
+        }
+
+        .social-icons {
+            margin-left: 240px;
+        }
+
+        .footer-contact-details {
+            height: 90px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-gap: 0px; */
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .footer-para {
+
+            margin: 0px;
+            padding-top: -20px;
+        }
+
+        .one {
+            margin-bottom: 2px;
+            color: grey;
+        }
+
+        .footer-crpt {
+            display: flex;
+            height: 100px;
+            width: 30%;
+            /* justify-content: calc(); */
+
+        }
+
+        .image-lifestyle {
+            height: 80px;
+            width: 100px;
+        }
+
+        .footerprgph {
+            margin-left: 20px;
+            color: rgb(163, 162, 162);
+            font-family: 'Barlow', sans-serif;
+        }
+
+        hr {
+            height: -20px;
+            background-color: rgb(218, 214, 214);
+        }
+
+        .subscription {
+            border: 1px solid grey;
+            height: 250px;
+            width: 100%;
+            border-left: none;
+            border-right: none;
+
+        }
+        /* *************************************** */
+        .subparel{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            width: 100%;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Barlow', sans-serif;
+
+        }
+        .sub1{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .email-connect{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        #email100{
+            height: 55px;
+            width: 300px;
+            background-color: whitesmoke;
+            border: none;
+            color: black;
+            font-size: 17px;
+            
+        }
+        #btn100{
+            height: 56px;
+            width: 150px;
+            background-color: black;
+            color: whitesmoke;
+            font-size: 17px;
+        }
+
+        #playstr{
+            height: 90px;
+            width: 200px;
+        }
+        .playstore-link{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            width: 100%;
+            /* grid-gap: 150px; */
+        }
+        .apple-link{
+            margin: 20px;
+            margin-left: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav_container">
+        <div class="small_nav">
+            <div class="left">
+                <div class="box1_logo">
+                   <img src="navbar.icon\busicon.png" class="small_img">
+                    <a href="#" >Free Delivery</a>
+                </div>
+                <div class="box1_logo">
+                    <img src="navbar.icon\shopicon.png" class="small_img">
+                    <a href="#"> Click & Collect</a>
+                </div>
+                <div class="box1_logo">
+                    <img src="navbar.icon\shopicon.png" class="small_img">
+                    <a href="#"> Return to store</a>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="">
+                    Download Our Apps
+                </div>
+                <span>|</span>
+                <div class="">Store Locator</div>
+                <span>|</span>
+                <div class="">Help</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="Main_nav">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxFwMFh9OFMcb9gLsrR7N2oJqC3qDtb0yuskD0le8lfPnxJvOquY8dTlUWcWx66rRwPw&usqp=CAU" alt="" class="main_logo">
+            
+            </div>
+            <div class="Nav_section_left">
+                <div><a href="womenhome.html" class="hover_1">Women</a></div>
+                <div><a href="menshome.html" class="hover_1">Men</a></div>
+                <div><a href="#">Kids</a></div>
+                <div style="width: 34%;"><a href="#">Shoes & Bags</a></div>
+            </div>
+            <div class="searchbox">
+               <div> 
+                   <img src="navbar.icon\searchicon.png" class="search_logo" alt="">
+                   <input type="search" placeholder="What are you looking for?" id="Search_box"></div>
+            </div>
+            <div class="sign_up_section">
+                <div> <a href="enternumber.html" id="sign_up">Sign Up - Sign In</a></div>
+                <span>|</span>
+                <div id="Navbasket"> <a href="addcart.html"> <h4>Basket</h4> </a>
+                <div>
+                    <img src="navbar.icon\bagicon.png" class="small_logo">
+                </div> </div>
+            </div>
+        </div>
+        <div class="third_Nav">
+            <div><a href="men.html" class="Navitems" id="Nav_topWear">Mens Wear</a></div>
+            <div><a href="women.html" class="Navitems">Womens wear</a></div>
+            <div><a href="men.html" class="Navitems">Mens Tops</a></div>
+            <div><a href="women.html" class="Navitems">Womens Tops</a></div>
+        </div>
+
+    </div>
+
+
+     <div class="extraspace">
+
+    </div>
+
+    <div id="container">
+        <div id="extend">
+          <div id="segregate">
+            <select id="brandF" onchange="brandFilter()">
+                <option value="">Select Brand</option>
+                <option value="GLOBAL">GLOBAL</option>
+                <option value="MELANGE">MELANGE</option>
+                <option value="BIBA">BIBA</option>
+                <option value="ALLEN_SOLLY">ALLEN SOLLY</option>
+            </select>
+
+            <select id="typeF" onchange="typeFilter()">
+                <option value="">Select Type</option>
+                <option value="Kurta_Set">Kurta Sets</option>
+                <option value="Tops">tops</option>
+                <option value="Pants">PANTS & </option>
+                <option value="Sweat_Shirts">SWEATSHIRTS</option>
+            </select>
+
+            <select id="fabricF" onchange="fabricFilter()">
+                <option value="">Select Fabric</option>
+                <option value="Cotton">COTTON</option>
+            </select>
+
+            <select id="colorF" onchange="colorFilter()">
+                <option>Select Color</option>
+                <option value="Beige">BEIGE</option>
+                <option value="Red">RED</option>
+                <option value="Blue">BLUE</option>
+                <option value="Yellow">YELLOW</option>
+                <option value="Green">GREEN</option>
+                <option value="Grey">GREY</option>
+                <option value="Pink">PINK</option>
+                <option value="White">WHITE</option>
+                <option value="Orange">ORANGE</option>
+                <option value="Black">BLACK</option>
+            </select>
+            </select>
+
+            <select id="priceSort" onchange="handlePriceSort()"> 
+                <option>Price Sort</option>
+                <option value="high">High to Low</option>
+                <option value="low">Low to High</option>
+              </option>
+            </select>
+
+        </div>
+        </div>
+        <div id="content">
+            
+
+        </div>
+
+    </div>
+
+
+
+    <!-- footer include <html>*********************************************</html> -->
+    <!-- footer include <html>*********************************************</html> -->
+    <!-- footer include <html>*********************************************</html> -->
+        <!-- foooter include *************************************************************** -->
+      <!-- foooter include *************************************************************** -->
+      <footer >
+
+
+
+        <div class="subscription">
+            <div class="subparel">
+                <div class="sub1">
+                    <h2>Subscribe to our awesome emails.</h2>
+                    <p class="footerprgph">Get our latest offers and news straight in your inbox.</p>
+                </div>
+                <div class="sub1">
+                    <h2>Download our apps</h2>
+                    <p class="footerprgph">Shop our products and offers on-the-go.</p>
+                </div>
+            </div>
+            <!-- ++++++++++++ -->
+            <div class="playstore-link">
+                <div class="email-connect">
+                    <input type="email" placeholder="please enter you email address" id="email100">
+                    <button type="submit" id="btn100">Subscribe</button >
+                </div>
+                <!-- <p style="color: red; margin-left: 30px;"> Enter you email address</p> -->
+
+                <div class="apple-link">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRsAvHJWFODmM1xucHIWNKOZT46jxaqZSQGg&usqp=CAU" alt="" id="playstr" ></a>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWHoIIc6pqUFxtMkNRNnyvFASoryAMmRiVA&usqp=CAU" alt="playstr" id="playstr"></a>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+      
+<!-- <hr> -->
+        <!-- <hr>**************************************************** -->
+        <div class="footer-first-box">
+            <ul>
+                <li>
+                    <h3>Women</h3>
+                </li>
+                <li><a href="#">Tops </a></li>
+                <li><a href="#">Ethnicwear </a></li>
+                <li><a href="#">Bottoms </a></li>
+                <li><a href="#">Dresses & Jumpsuts</a> </li>
+                <li><a href="#">Winterwear </a></li>
+                <li><a href="#">Nightwear </a></li>
+                <li><a href="#">Sportwear </a></li>
+                <li><a href="#">Beuaty </a></li>
+                <li><a href="#">Watches& Sunglasses </a> </li>
+            </ul>
+
+            <!-- second line  -->
+            <ul>
+                <li>
+                    <h3>Men</h3>
+                </li>
+                <li><a href="#">Tops </a></li>
+                <li><a href="#">Bottoms </a></li>
+                <li><a href="#">Ethinicwear </a></li>
+                <li><a href="#">Sportswear </a></li>
+                <li><a href="#">Sportswear </a></li>
+                <li><a href="#">Innerwear </a></li>
+                <li><a href="#">Grooming </a></li>
+                <li><a href="#">Watches </a></li>
+                <li><a href="#">Sunglasses </a></li>
+            </ul>
+
+
+            <!-- third  -->
+            <ul>
+                <li>
+                    <h3>Kids</h3>
+                </li>
+                <li> <a href="#">Girls Clothing</a> </li>
+                <li> <a href="#"> Boys Clothing</a></li>
+                <li> <a href="#"> Infants Girls</a></li>
+                <li> <a href="#">Infants Boys</a> </li>
+                <li><a href="#">Winterwear</a></li>
+                <li> <a href="#"> Add ons</a></li>
+                <li> <a href="#">The Teen Shop</a> </li>
+            </ul>
+            <!-- fourth  -->
+
+            <ul>
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li><a href="#">Online Offers</a></li>
+                <li><a href="#"> Store Offers</a></li>
+                <li><a href="#">Online Gift Card</a></li>
+                <li><a href="#">Store Gift Card</a></li>
+                <li><a href="#">Store Nearby</a></li>
+                <li><a href="#">EDGE Membership</a></li>
+                <li><a href="#">Refer & Win</a></li>
+                <li><a href="#">Shop on WhatsApp</a></li>
+                <li><a href="#">Fashion Vlog </a></li>
+                <li><a href="#">Join CIRCLEMAG</a></li>
+                <li><a href="#">SBI Offers</a></li>
+                <li><a href="#">Homecenters</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="footer-second-box">
+            <ul>
+                <li>
+                    <h3>About</h3>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Take a Tour</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Landmark Cares</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Help</h3>
+                </li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shipping Return</a></li>
+                <li><a href="#">Process </a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">help Centre</a></li>
+            </ul>
+        </div>
+        <!-- Contact -->
+        <hr>
+        <div class="footer-contact-details">
+            <div class="footer-items">
+                <div class="image-icons"><img src="footericon/call.png" alt=""
+                        class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">Talk to us</p>
+                    <p class="footer-para">1800-123-1555</p>
+                </div>
+            </div>
+            <!-- second  -->
+            <div class="footer-items">
+                <div class="image-icons"><img
+                        src="footericon/faq.png"
+                        alt="" class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">Helpcentre</p>
+                    <p class="footer-para">help.lifestylestores.com</p>
+                </div>
+            </div>
+            <!-- third  -->
+            <div class="footer-items">
+                <div class="image-icons"><img
+                        src="footericon/envelope.png"
+                        alt="" class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">write to us</p>
+                    <p class="footer-para">help@lifestylestores</p>
+                </div>
+            </div>
+
+            <div class="footer-items social-icons">
+                <img src="footericon/facebook.png" alt="" class="imgage-Icon">
+                <img src="footericon/twitter.png"
+                    alt="" class="imgage-Icon">
+                <img src="footericon/instagram.png" alt="" class="imgage-Icon">
+            </div>
+        </div>
+
+        <hr>
+        <!-- fourth -->
+        <div class="footer-crpt">
+            <div class="crpt-img"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rEtI7omf7mv7hu-ONxM_HfSMr5Q43-lESL3Uk0p374Z3F6Wbad29oY2QnTWphwuorc4&usqp=CAU"
+                    alt="" class="image-lifestyle"></div>
+            <div class="footerprgph">
+                <p>&#169 2022 RNA Intellectual Property Limited.
+                    Terms & Conditions - Privacy Policy</p>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>
+<script>
+  var woData = [
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008957702-White-OffWhite-1000008957702_01-2100.jpg",
+        name: "GLOBAL DESI Printed Sleeveless Kurti with Sharara Pants",
+        brand: "GLOBAL",
+        type: "Kurta_Set",
+        price: 4299,
+        stprice: 5299,
+        fabric: "Cotton",
+        color: "Beige",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009762514-Blue-Navy-1000009762514_01-2100.jpg",
+        name: "MELANGE Women Embellished Kurta with Pants and Dupatta",
+        brand: "MELANGE",
+        type: "Kurta_Set",
+        price: 2029,
+        stprice: 2999,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 10
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009745298-Beige-Beige-1000009745298_01-2100.jpg",
+        name: "MELANGE Women Printed Kurta with Pants",
+        brand: "MELANGE",
+        type: "Kurta_Set",
+        price: 1329,
+        stprice: 1499,
+        fabric: "Cotton",
+        color: "Beige",
+        discount: 13
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010015977-Pink-Fuschia-1000010015977_01-2100.jpg",
+        name: "MELANGE Women Printed Kurta with Shrug and Straight Pants",
+        brand: "MELANGE",
+        type: "Kurta_Set",
+        price: 2155,
+        stprice: 2699,
+        fabric: "Cotton",
+        color: "Red",
+        discount: 49
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010015886-Blue-Navy-1000010015886_01-2100.jpg",
+        name: "MELANGE Women Printed Kurta with Palazzos",
+        brand: "MELANGE",
+        type: "Kurta_Set",
+        price: 1679,
+        stprice: 2499,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 15
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010015938-Blue-Navy-1000010015938_01-2100.jpg",
+        name: "MELANGE Women Printed Kurta with Solid Pants",
+        brand: "MELANGE",
+        type: "Kurta_Set",
+        price: 1359,
+        stprice: 2199,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010035597-Black-Black-1000010035597_01-2100.jpg",
+        name: "BIBA Women Printed Straight Kurta with Palazzos, Dupatta and Face Mask",
+        brand: "BIBA",
+        type: "Kurta_Set",
+        price: 1999,
+        stprice: 2799,
+        fabric: "Cotton",
+        color: "Black",
+        discount: 10
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010035582-Blue-Blue-1000010035582_01-2100.jpg",
+        name: "BIBA Women Printed Kurta, Palazzos, Dupatta and Face Mask",
+        brand: "BIBA",
+        type: "Kurta_Set",
+        price: 2309,
+        stprice: 3009,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 12
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010362568-Red-Red-1000010362568_01-2100.jpg",
+        name: "BIBA Women Printed Kurta, Churidar and Dupatta",
+        brand: "BIBA",
+        type: "Kurta_Set",
+        price: 2399,
+        stprice: 3009,
+        fabric: "Cotton",
+        color: "Pink",
+        discount: 10
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010032921-Green-Lightgreen-1000010032921_01-2100.jpg",
+        name: "GLOBAL DESI Women Printed Crop Top with Tiered Maxi Skirt",
+        brand: "GLOBAL",
+        type: "Kurta_Set",
+        price: 3499,
+        stprice: 4509,
+        fabric: "Cotton",
+        color: "Green",
+        discount: 25
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009476409-Green-Mint-1000009476409_01-2100.jpg",
+        name: "GLOBAL DESI Women Printed Layered Straight Kurta with Palazzos",
+        brand: "GLOBAL",
+        type: "Kurta_Set",
+        price: 5999,
+        stprice: 9009,
+        fabric: "Cotton",
+        color: "Green",
+        discount: 49
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010055601-Black-Black-1000010055601_01-2100.jpg",
+        name: "GLOBAL DESI Women Printed Top with Palazzos",
+        brand: "GLOBAL",
+        type: "Kurta_Set",
+        price: 1559,
+        stprice: 5549,
+        fabric: "Cotton",
+        color: "Yellow",
+        discount: 2 
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010083273-Blue-LightBlue-1000010083273_01-2100.jpg",
+        name: "ALLEN SOLLY Women Solid Sleeveless Top",
+        brand: "ALLEN_SOLLY",
+        type: "Tops",
+        price: 899,
+        stprice: 989,
+        fabric: "Cotton",
+        color: "Pink",
+        discount: 5 
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009865688-Blue-Navy-1000009865688_01-2100.jpg",
+        name: "ALLEN SOLLY Women Textured Top with Button Placket",
+        brand: "ALLEN_SOLLY",
+        type: "Tops",
+        price: 1139,
+        stprice: 1209,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 10
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009865667-Yellow-Yellow-1000009865667_01-2100.jpg",
+        name: "ALLEN SOLLY Women Embroidered Short Sleeves Top",
+        brand: "ALLEN_SOLLY",
+        type: "Tops",
+        price: 2199,
+        stprice: 3199,
+        fabric: "Cotton",
+        color: "Yellow",
+        discount: 25
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009840161-Green-Green-1000009840161_01-2100.jpg",
+        name: "CODE Women Lace Three-quarter Sleeves Top",
+        brand: "CODE",
+        type: "Tops",
+        price: 974,
+        stprice: 1850,
+        fabric: "Cotton",
+        color: "Green",
+        discount: 45
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008918248-White-White-1000008918248_01-2100.jpg",
+        name: "CODE Women Printed Sleeveless Top",
+        brand: "CODE",
+        type: "Tops",
+        price: 649,
+        stprice: 2009,
+        fabric: "Cotton",
+        color: "White",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009048040-Red-Wine-1000009048040_01-2100.jpg",
+        name: "CODE Women Solid Cinched Waist Top",
+        brand: "CODE",
+        type: "Tops",
+        price: 649,
+        stprice: 909,
+        fabric: "Cotton",
+        color: "Red",
+        discount: 40
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009712924-Yellow-Yellow-1000009712924_01-2100.jpg",
+        name: "CODE Women Sleeveless Top",
+        brand: "CODE",
+        type: "Tops",
+        price: 449,
+        stprice: 500,
+        fabric: "Cotton",
+        color: "Yellow",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008957663-Beige-Beige-1000008957663_01-2100.jpg",
+        name: "GLOBAL DESI Printed Elasticated Palazzos",
+        brand: "GLOBAL",
+        type: "Pants",
+        price: 1679,
+        stprice: 1670,
+        fabric: "Cotton",
+        color: "Beige",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009058377-White-Offwhite-1000009058377_01-2100.jpg",
+        name: "GLOBAL DESI Women Checked Elasticated Sharara Pants",
+        brand: "GLOBAL",
+        type: "Pants",
+        price: 1619,
+        stprice: 2009,
+        fabric: "Cotton",
+        color: "White",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010166543-Blue-Indigo-1000010166543_01-2100.jpg",
+        name: "GLOBAL DESI Women Solid High Slit Palazzos",
+        brand: "GLOBAL",
+        type: "Pants",
+        price: 1079,
+        stprice: 1309,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 23
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008911995-Black-Black-1000008911995_01-2100.jpg",
+        name: "GLOBAL DESI Solid Elasticated Straight Pants",
+        brand: "GLOBAL",
+        type: "Pants",
+        price: 2149,
+        stprice: 2199,
+        fabric: "Cotton",
+        color: "Black",
+        discount: 5
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009745246-Yellow-Lime-1000009745246_01-2100.jpg",
+        name: "MELANGE Women Solid Cropped Pants",
+        brand: "MELANGE",
+        type: "Pants",
+        price: 799,
+        stprice: 1409,
+        fabric: "Cotton",
+        color: "Yellow",
+        discount: 49
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009745259-var5-Red-Maroon-1000009745259-var5_01-2100.jpg",
+        name: "MELANGE Women Striped Cropped Straight Pants",
+        brand: "MELANGE",
+        type: "Pants",
+        price: 799,
+        stprice: 809,
+        fabric: "Cotton",
+        color: "Red",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010065658-Beige-Beige-1000010065658_01-2100.jpg",
+        name: "MELANGE Women Printed Straight Trousers",
+        brand: "MELANGE",
+        type: "Pants",
+        price: 799,
+        stprice: 1009,
+        fabric: "Cotton",
+        color: "Beige",
+        discount: 19
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010065671-Blue-Navy-1000010065671_01-2100.jpg",
+        name: "MELANGE Women Solid Elasticated Straight Pants",
+        brand: "MELANGE",
+        type: "Pants",
+        price: 799,
+        stprice: 1009,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 21
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008776423-Green-Green-1000008776423_01-2100.jpg",
+        name: "AURELIA Women Solid Palazzo Pants with Inverted Pleats",
+        brand: "AURELIA",
+        type: "Pants",
+        price: 1259,
+        stprice: 1260,
+        fabric: "Cotton",
+        color: "Green",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401844-Blue-Blue-1000009401844_01-2100.jpg",
+        name: "AURELIA Women Solid Elasticated Straight Pants",
+        brand: "AURELIA",
+        type: "Pants",
+        price: 629,
+        stprice: 639,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008776332-Pink-Peach-1000008776332_01-2100.jpg",
+        name: "AURELIA Women Printed Elasticated Palazzos",
+        brand: "AURELIA",
+        type: "Pants",
+        price: 699,
+        stprice: 709,
+        fabric: "Cotton",
+        color: "Orange",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008776332-Pink-Peach-1000008776332_01-2100.jpg",
+        name: "AURELIA Women Printed Elasticated Palazzos",
+        brand: "AURELIA",
+        type: "Pants",
+        price: 699,
+        stprice: 709,
+        fabric: "Cotton",
+        color: "Red",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010878544-Pink-Pink-1000010878544_01-2100.jpg",
+        name: "ALLEN SOLLY Women Printed Crew Neck Sweatshirt",
+        brand: "ALLEN_SOLLY",
+        type: "Sweat_Shirts",
+        price: 1379,
+        stprice: 1409,
+        fabric: "Cotton",
+        color: "Pink",
+        discount: 2
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010725223-Blue-Navy-1000010725223_01-2100.jpg",
+        name: "ALLEN SOLLY Women Printed Sweatshirt",
+        brand: "ALLEN_SOLLY",
+        type: "Sweat_Shirts",
+        price: 1279,
+        stprice: 2009,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010433514-Red-Wine-1000010433514_01-2100.jpg",
+        name: "CODE Women Solid Knitted Top",
+        brand: "CODE",
+        type: "Sweat_Shirts",
+        price: 1129,
+        stprice: 2009,
+        fabric: "Cotton",
+        color: "Red",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009900630-Blue-Blue-1000009900630_01-2100.jpg",
+        name: "CODE Women Textured Crew Neck Sweatshirt",
+        brand: "CODE",
+        type: "Sweat_Shirts",
+        price: 949,
+        stprice: 1309,
+        fabric: "Cotton",
+        color: "Blue",
+        discount: 20
+    },
+    {
+        img_url: "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009304505-White-White-1000009304505_01-2100.jpg",
+        name: "CODE Women Textured Crew Neck Sweatshirt",
+        brand: "CODE",
+        type: "Sweat_Shirts",
+        price: 1059,
+        stprice: 1309,
+        fabric: "Cotton",
+        color: "White",
+        discount: 20
+    },
+];
+
+localStorage.setItem("womensData",JSON.stringify(woData));
+
+    var woData = JSON.parse(localStorage.getItem("womensData"));//3//took data from d1.html
+    var cartArr = JSON.parse(localStorage.getItem("CartItems"))||[];
+
+    function handlePriceSort(){
+      var selected = document.querySelector("#priceSort").value;
+      if(selected == "high"){ //write descending order logic since chosen high to low
+         woData.sort(function(a,b){
+           return Number(b.price) - Number(a.price);
+         });
+      }
+      if(selected == "low"){
+        woData.sort(function(a,b){
+           return Number(a.price) - Number(b.price);
+         });
+
+      }
+      console.log(woData);
+      displayData(woData);//called the function to diplsya sorted data
+    }
+
+    function brandFilter(){
+      var selected = document.querySelector("#brandF").value;
+      var filteredList = woData.filter(function(elem){
+        return(elem.brand==selected)
+      });
+        displayData(filteredList);
+    }
+
+    function typeFilter(){
+      var selected = document.querySelector("#typeF").value;
+      var filteredList = woData.filter(function(elem){
+        return(elem.type==selected)
+      });
+        displayData(filteredList);
+    }
+
+    function fabricFilter(){
+      var selected = document.querySelector("#fabricF").value;
+      var filteredList = woData.filter(function(elem){
+        return(elem.fabric==selected)
+      });
+        displayData(filteredList);
+    }
+
+    function colorFilter(){
+      var selected = document.querySelector("#colorF").value;
+      var filteredList = woData.filter(function(elem){
+        return(elem.color==selected)
+      });
+        displayData(filteredList);
+    }
+
+    displayData(woData); //2//called the function display
+    function displayData(woData){
+        document.querySelector("#content").innerHTML = "";
+
+        woData.map(function(data){       //1//functio to display data
+        var div = document.createElement("div");
+            div.setAttribute("class","holder");
+
+            var image1 = document.createElement("img");
+            image1.setAttribute("src", data.img_url);
+
+            // var disc = document.createElement("h3");
+            // disc.setAttribute("id","disco");
+            // disc.textContent = `${data.discount} %`;
+
+            // image1.append(disc);
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id","ratebar");
+
+            var price1 = document.createElement("h3");
+            price1.textContent = `₹ ${data.price}`;
+            
+            var stp = document.createElement("p");
+            stp.setAttribute("id","strike");
+            stp.textContent = `₹ ${data.stprice}`;
+            
+            div2.append(price1,stp);
+
+            var name1 = document.createElement("p");
+            name1.textContent = data.name;
+            name1.setAttribute("id", "name");
+
+            var btn = document.createElement("button");
+            btn.textContent = "Add to Cart";
+            btn.addEventListener ("click",function(){   //4//addto cart function
+              addToCart(data);
+            });
+            
+
+            div.append(image1,div2,name1,btn);
+
+            document.querySelector("#content").append(div);
+    });
+    }
+    
+    function addToCart(data){     //5//fuction to add to cart
+        cartArr.push(data);      //pushing items into cart arr line:93
+        localStorage.setItem("CartItems",JSON.stringify(cartArr));   //storing cartarray 
+        alert("added successfully")                         
+
+    }
+</script>

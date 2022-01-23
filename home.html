@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* -------------------------NAV--------------------------------NAV------------------------------------NAV________________________________ */
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav_container{
+    height: 9.5em;
+    width: 100%;
+    display:  grid;
+    grid-template-rows: 25% 45% 30% ;
+    position:sticky;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    /* font-family: 'PT Mono', monospace;
+    font-family: 'Ubuntu', sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav_container > div{
+    display: flex;
+}
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+.small_nav{
+   display: flex;
+   justify-content: space-between;
+}
+.small_nav > div{
+    
+    height: 100%;
+    width: 30%;
+    margin-left: 6%;
+  
+}
+.left{
+    display: flex;
+}
+.box1_logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    margin: 0px 2%;
+    
+}
+.box1_logo> a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 8%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.small_nav{
+    background-color: black;
+    color: whitesmoke;
+}
+.small_img{
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);        
+}
+
+.right{
+    margin-right: 7%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right > div{
+    font-size: 13px;
+    margin: 0px 2%;
+    font-weight: bold;
+}
+/* -----------------------------------2nd nav -------------------------------------------------------------------- */
+.Main_nav{
+    background-color: white;
+    width: 100%;
+    height: px;
+}
+.logo{
+    height: 100%;
+    width: 10%;
+    margin-left: 5%;
+}
+.main_logo{
+    height: 100%;
+    width: 100%;
+}
+.Nav_section_left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.Nav_section_left > div{
+    height: 100%;
+    width: 22%;
+}
+.Nav_section_left > div > a{ 
+   text-decoration: none;
+   font-size: 13.5px;
+   color: black;
+   font-weight: bold;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.hover_1:hover{
+    background-color: whitesmoke;
+    color: goldenrod;
+}
+.searchbox{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;   
+}
+.searchbox> div{
+    height: 60%;
+    width:100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.search_logo{
+    margin: 0px 2%;
+    height: 20px;
+    width: 20px;
+    filter: invert(60%);
+}
+.searchbox > div > input {
+    
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+
+.sign_up_section{
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: bolder;
+}
+.sign_up_section > div{
+    margin: 0px 2%;
+}
+#Navbasket{
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+#Navbasket > a{
+    color: black;
+    text-decoration: none;
+}
+.small_logo{
+    height: 21px;
+    width: 21px;
+    margin-left: 15%;
+}
+#sign_up{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sign_up:hover{
+    color: goldenrod;
+}
+/* ________________________________________________________________3rd Nav_________________________________________________________________ */
+
+.third_Nav{
+    padding-left: 7%;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+.third_Nav > div{
+   height: 100%; 
+   width: 4% auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 1%;
+} 
+.Navitems{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    
+}
+.Navitems:hover{
+    border-bottom: 2px solid goldenrod;
+}
+
+
+
+.extraspace{
+    height: 9.5em;
+    width: 100%;
+}
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+.home_container{
+    display: flex;
+    height: 600px;
+    width: 85%;
+    margin: 0px auto;
+
+}
+.home_container > div{
+    height: 100%;
+    width: 25%;
+}
+.home_btn{
+    margin:140% auto;
+    height: 70px;
+    width: 85%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.Yellow{
+    color: goldenrod;
+    text-decoration: none;
+}
+/* __________________________________________footerr--------------------------------------------------------- */
+
+
+.footer-first-box {
+            height: auto;
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 100px;
+            /* margin: auto; */
+            /* justify-content: center; */
+
+
+        }
+
+        .footer-second-box {
+            height: auto;
+            width: 30%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 100px;
+
+
+        }
+
+        li {
+            list-style: none;
+            margin-top: 5px;
+            font-size: 15px;
+            font-family: 'Barlow', sans-serif;
+            /* line-gap-override: 5px; */
+        }
+
+        li>a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+
+        }
+
+        .imgage-Icon {
+            height: 35px;
+            width: 35px;
+            padding-left:15px;
+            padding-top: 15px;
+
+
+        }
+        footer{
+            margin-top: 50px;
+            padding: 40px;
+        }
+
+        .image-icons {
+            border: 1px solid rgb(158, 156, 156);
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .footer-items {
+            /* margin: auto; */
+            /* margin: auto; */
+            margin-left: 30px;
+            margin-right: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+
+        }
+
+        .social-icons {
+            margin-left: 240px;
+        }
+
+        .footer-contact-details {
+            height: 90px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-gap: 0px; */
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .footer-para {
+
+            margin: 0px;
+            padding-top: -20px;
+        }
+
+        .one {
+            margin-bottom: 2px;
+            color: grey;
+        }
+
+        .footer-crpt {
+            display: flex;
+            height: 100px;
+            width: 30%;
+            /* justify-content: calc(); */
+
+        }
+
+        .image-lifestyle {
+            height: 80px;
+            width: 100px;
+        }
+
+        .footerprgph {
+            margin-left: 20px;
+            color: rgb(163, 162, 162);
+            font-family: 'Barlow', sans-serif;
+        }
+
+        hr {
+            height: -20px;
+            background-color: rgb(218, 214, 214);
+        }
+
+        .subscription {
+            border: 1px solid grey;
+            height: 250px;
+            width: 100%;
+            border-left: none;
+            border-right: none;
+
+        }
+        /* *************************************** */
+        .subparel{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            width: 100%;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Barlow', sans-serif;
+
+        }
+        .sub1{
+            margin-left: 30px;
+        }
+        .email-connect{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        #email100{
+            height: 55px;
+            width: 300px;
+            background-color: whitesmoke;
+            border: none;
+            color: black;
+            font-size: 17px;
+            
+        }
+        #btn100{
+            height: 56px;
+            width: 150px;
+            background-color: black;
+            color: whitesmoke;
+            font-size: 17px;
+        }
+
+        #playstr{
+            height: 90px;
+            width: 200px;
+        }
+        .playstore-link{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            width: 100%;
+            /* grid-gap: 150px; */
+        }
+        .apple-link{
+            margin: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_container">
+        <div class="small_nav">
+            <div class="left">
+                <div class="box1_logo">
+                   <img src="navbar.icon\busicon.png" class="small_img">
+                    <a href="#" >Free Delivery</a>
+                </div>
+                <div class="box1_logo">
+                    <img src="navbar.icon\shopicon.png" class="small_img">
+                    <a href="#"> Click & Collect</a>
+                </div>
+                <div class="box1_logo">
+                    <img src="navbar.icon\shopicon.png" class="small_img">
+                    <a href="#"> Return to store</a>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="">
+                    Download Our Apps
+                </div>
+                <span>|</span>
+                <div class="">Store Locator</div>
+                <span>|</span>
+                <div class="">Help</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="Main_nav">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqxFwMFh9OFMcb9gLsrR7N2oJqC3qDtb0yuskD0le8lfPnxJvOquY8dTlUWcWx66rRwPw&usqp=CAU" alt="" class="main_logo">
+            
+            </div>
+            <div class="Nav_section_left">
+                <div><a href="womenhome.html" class="hover_1">Women</a></div>
+                <div><a href="menshome.html" class="hover_1">Men</a></div>
+                <div><a href="#">Kids</a></div>
+                <div style="width: 34%;"><a href="#">Shoes & Bags</a></div>
+            </div>
+            <div class="searchbox">
+               <div> 
+                   <img src="navbar.icon\searchicon.png" class="search_logo" alt="">
+                   <input type="search" placeholder="What are you looking for?" id="Search_box"></div>
+            </div>
+            <div class="sign_up_section">
+                <div> <a href="enternumber.html" id="sign_up">Sign Up - Sign In</a></div>
+                <span>|</span>
+                <div id="Navbasket"> <a href="addcart.html"> <h4>Basket</h4> </a>
+                <div>
+                    <img src="navbar.icon\bagicon.png" class="small_logo">
+                </div> </div>
+            </div>
+        </div>
+        <div class="third_Nav">
+            <div><a href="men.html" class="Navitems" id="Nav_topWear">Mens Wear</a></div>
+            <div><a href="women.html" class="Navitems">Womens wear</a></div>
+            <div><a href="men.html" class="Navitems">Mens Tops</a></div>
+            <div><a href="women.html" class="Navitems">Womens Tops</a></div>
+        </div>
+
+    </div>
+
+    <div class="extraspace"></div>
+    <div class="home_container">
+
+        <div style="background-image: url(https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/pre-landing-Women-03Sep2020.jpg);">
+            <div class="home_btn"><a href="men.html" class="Yellow">MEN</a></div>  </div>
+        <div style="background-image: url(https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/pre-landing-Men-03Sep2020.jpg);">
+            <div class="home_btn"><a href="women.html" class="Yellow">WOMEN</a></div>  </div>
+        <div style="background-image: url(https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/pre-landing-Kids-03Sep2020.jpg);">
+            <div class="home_btn"><a href="#" class="Yellow">KIDS</a></div>  </div>
+        <div style="background-image: url(https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/pre-landing-Shoesandbags-03Sep2020.jpg);">
+            <div class="home_btn"><a href="#" class="Yellow">SHOE & BAG</a></div>  </div>
+    </div>
+<!-- <footer>*****************************************************************</footer> -->
+    <footer >
+
+
+
+        <div class="subscription">
+            <div class="subparel">
+                <div class="sub1">
+                    <h2>Subscribe to our awesome emails.</h2>
+                    <p class="footerprgph">Get our latest offers and news straight in your inbox.</p>
+                </div>
+                <div class="sub1">
+                    <h2>Download our apps</h2>
+                    <p class="footerprgph">Shop our products and offers on-the-go.</p>
+                </div>
+            </div>
+            <!-- ++++++++++++ -->
+            <div class="playstore-link">
+                <div class="email-connect">
+                    <input type="email" placeholder="please enter you email address" id="email100">
+                    <button type="submit" id="btn100">Subscribe</button >
+                </div>
+                <!-- <p style="color: red; margin-left: 30px;"> Enter you email address</p> -->
+
+                <div class="apple-link">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRsAvHJWFODmM1xucHIWNKOZT46jxaqZSQGg&usqp=CAU" alt="" id="playstr" ></a>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWHoIIc6pqUFxtMkNRNnyvFASoryAMmRiVA&usqp=CAU" alt="playstr" id="playstr"></a>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+      
+<!-- <hr> -->
+        <!-- <hr>**************************************************** -->
+        <div class="footer-first-box">
+            <ul>
+                <li>
+                    <h3>Women</h3>
+                </li>
+                <li><a href="#">Tops </a></li>
+                <li><a href="#">Ethnicwear </a></li>
+                <li><a href="#">Bottoms </a></li>
+                <li><a href="#">Dresses & Jumpsuts</a> </li>
+                <li><a href="#">Winterwear </a></li>
+                <li><a href="#">Nightwear </a></li>
+                <li><a href="#">Sportwear </a></li>
+                <li><a href="#">Beuaty </a></li>
+                <li><a href="#">Watches& Sunglasses </a> </li>
+            </ul>
+
+            <!-- second line  -->
+            <ul>
+                <li>
+                    <h3>Men</h3>
+                </li>
+                <li><a href="#">Tops </a></li>
+                <li><a href="#">Bottoms </a></li>
+                <li><a href="#">Ethinicwear </a></li>
+                <li><a href="#">Sportswear </a></li>
+                <li><a href="#">Sportswear </a></li>
+                <li><a href="#">Innerwear </a></li>
+                <li><a href="#">Grooming </a></li>
+                <li><a href="#">Watches </a></li>
+                <li><a href="#">Sunglasses </a></li>
+            </ul>
+
+
+            <!-- third  -->
+            <ul>
+                <li>
+                    <h3>Kids</h3>
+                </li>
+                <li> <a href="#">Girls Clothing</a> </li>
+                <li> <a href="#"> Boys Clothing</a></li>
+                <li> <a href="#"> Infants Girls</a></li>
+                <li> <a href="#">Infants Boys</a> </li>
+                <li><a href="#">Winterwear</a></li>
+                <li> <a href="#"> Add ons</a></li>
+                <li> <a href="#">The Teen Shop</a> </li>
+            </ul>
+            <!-- fourth  -->
+
+            <ul>
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li><a href="#">Online Offers</a></li>
+                <li><a href="#"> Store Offers</a></li>
+                <li><a href="#">Online Gift Card</a></li>
+                <li><a href="#">Store Gift Card</a></li>
+                <li><a href="#">Store Nearby</a></li>
+                <li><a href="#">EDGE Membership</a></li>
+                <li><a href="#">Refer & Win</a></li>
+                <li><a href="#">Shop on WhatsApp</a></li>
+                <li><a href="#">Fashion Vlog </a></li>
+                <li><a href="#">Join CIRCLEMAG</a></li>
+                <li><a href="#">SBI Offers</a></li>
+                <li><a href="#">Homecenters</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="footer-second-box">
+            <ul>
+                <li>
+                    <h3>About</h3>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Take a Tour</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Landmark Cares</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Help</h3>
+                </li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shipping Return</a></li>
+                <li><a href="#">Process </a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">help Centre</a></li>
+            </ul>
+        </div>
+        <!-- Contact -->
+        <hr>
+        <div class="footer-contact-details">
+            <div class="footer-items">
+                <div class="image-icons"><img src="footericon/call.png" alt=""
+                        class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">Talk to us</p>
+                    <p class="footer-para">1800-123-1555</p>
+                </div>
+            </div>
+            <!-- second  -->
+            <div class="footer-items">
+                <div class="image-icons"><img
+                        src="footericon/faq.png"
+                        alt="" class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">Helpcentre</p>
+                    <p class="footer-para">help.lifestylestores.com</p>
+                </div>
+            </div>
+            <!-- third  -->
+            <div class="footer-items">
+                <div class="image-icons"><img
+                        src="footericon/envelope.png"
+                        alt="" class="imgage-Icon"></div>
+                <div>
+                    <p class="footer-para one">write to us</p>
+                    <p class="footer-para">help@lifestylestores</p>
+                </div>
+            </div>
+
+            <div class="footer-items social-icons">
+                <img src="footericon/facebook.png" alt="" class="imgage-Icon">
+                <img src="footericon/twitter.png"
+                    alt="" class="imgage-Icon">
+                <img src="footericon/instagram.png" alt="" class="imgage-Icon">
+            </div>
+        </div>
+
+        <hr>
+        <!-- fourth -->
+        <div class="footer-crpt">
+            <div class="crpt-img"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rEtI7omf7mv7hu-ONxM_HfSMr5Q43-lESL3Uk0p374Z3F6Wbad29oY2QnTWphwuorc4&usqp=CAU"
+                    alt="" class="image-lifestyle"></div>
+            <div class="footerprgph">
+                <p>&#169 2022 RNA Intellectual Property Limited.
+                    Terms & Conditions - Privacy Policy</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+</html>
